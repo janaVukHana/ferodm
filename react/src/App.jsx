@@ -1,20 +1,30 @@
 import { useState } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Hero from './components/Hero'
+import Home from './views/Home'
+import Contact from './views/Contact'
+import AboutUs from './views/AboutUs'
+import Footer from './components/Footer'
 
 function App() {
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <main>
-        <p>Main content</p>
-      </main>
-      <footer>
-        <p>Footer</p>
-      </footer>
-    </div>
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
+
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/contact" element={<Contact />} />
+            {/* <Route path="/contact-us/:id" element={<Protected><Message /></Protected>} /> */}
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </BrowserRouter>
   )
 }
 

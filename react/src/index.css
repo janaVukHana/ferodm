@@ -39,19 +39,33 @@ nav ul li a {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
 }
 
-nav ul li a:hover {
-  border-bottom: 2px solid #fff;
+nav ul li a:hover, 
+.active {
+  border-bottom-color: #fff;
 }
 
 .logo {
-  color: #fff;
   font-size: 20px;
   letter-spacing: 10px;
   font-family: "Lora";
   font-weight: 700;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo span {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.logo a:hover {
+  color: #979797;
 }
 
 /* hero styles */

@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom";
+
 export default function Navbar() {
     return (
         <nav>
             <div className='logo'>
-            GVOZDJARA FERODM
+                <a href="#">Fero D&M<br /><span>Gvožđara</span></a>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><NavLink className={({isActive}) => isActive ? 'active':''} to="/">Home</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? 'active':''} to="/about-us">About Us</NavLink></li>
+                <li><NavLink className={({isActive}) => isActive ? 'active':''} to="/contact">Contact</NavLink></li>
             </ul>
         </nav>
     )
