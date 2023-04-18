@@ -29,8 +29,8 @@ h2 {
 }
 
 p {
-  font-size: 1.4;
-  line-height: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
 img {
@@ -51,6 +51,13 @@ section {
 .inner-container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.circle {
+  background-color: #fff;
+  color: teal;
+  padding: 1rem;
+  border-radius: 50%;
 }
 
 .light-section {
@@ -301,22 +308,82 @@ nav ul li a:hover,
 /* CONTACT SECTION */
 .contact-info {
   display: flex;
-}
-
-.contact-info h2, .contact-info p {
-  text-align: left;
-}
-
-.contact-info .info {
-  display: flex;
+  padding: 0 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .contact-info .city-info {
   flex: 1;
 }
 
-.contact-info div {
-  border: 1px solid red;
+.contact-info .info {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.contact-info .icon {
+  padding: 0.5rem;
+  margin-right: 1rem;
+}
+
+.contact-info .info-title {
+  font-weight: 700;
+}
+
+.contact-info h2, .contact-info p {
+  text-align: left;
+}
+
+.contact-info a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.working-time {
+  margin-bottom: 2rem;
+}
+
+.working-time p {
+  display: flex;
+  justify-content: space-between;
+  background-color: teal;
+  width: 50%;
+  padding: 0.5rem 1rem;
+  margin: 0 auto;
+}
+
+.working-time p:nth-of-type(2) {
+  background-color: rgb(0, 59, 59);
+}
+
+/* KONTAKT FORMA */
+.contact-form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.contact-form input, .contact-form textarea {
+  border-radius: 4px;
+  border: none;
+  padding: 1rem 0.5rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background-color: teal;
+  border: 1px solid teal;
+  color: #fff;
+  transition: 0.3s linear background-color;
+}
+
+.contact-form button:hover {
+  background-color: #fff;
+  color: teal;
 }
 
 /* FOOTER SECTION */
@@ -326,6 +393,25 @@ footer p {
 }
 
 /* @MEDIA QUERY */
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .working-time p {
+    width: 80%;
+  }
+  
+  .contact-form {
+    width: 80%;
+  }
+}
+
+
 @media only screen and (max-width: 768px) {
   .header-hero .intro-heading {
     width: 90%;
@@ -386,6 +472,18 @@ footer p {
       margin-right: 8px;
       width: 70px;
       max-width: 70px; 
+    }
+
+    .contact-info {
+      flex-direction: column;
+    }
+
+    .working-time p {
+      width: 95%;
+    }
+    
+    .contact-form {
+      width: 95%;
     }
 
 }
