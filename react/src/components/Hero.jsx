@@ -1,12 +1,9 @@
-export default function Hero() {
+export default function Hero({title, children}) {
     return (
         <div className='header-hero'>
             <div className="intro-heading">
-                <h1>Gvozdjara u tvom komsiluku</h1>
-                {/* TODO: paragraph is at the top */}
-                <p style={{color: 'white'}}>
-                    One text paragraph ...
-                </p>
+                <h1>{title}</h1>
+                {children}
             </div>
         </div>
     )

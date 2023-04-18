@@ -28,6 +28,16 @@ h2 {
   margin-bottom: 2rem;
 }
 
+p {
+  font-size: 1.4;
+  line-height: 2.5rem;
+}
+
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+
 button {
   border: 0;
   offset: 0;
@@ -76,12 +86,20 @@ nav .hamburger-icon {
 }
 
 nav .hamburger-icon button {
-  background-color: blue;
+  background-color: teal;
   display: block;
   position: relative;
   width: 50px;
   height: 40px;
   border-radius: 4px;
+}
+
+nav .hamburger-icon button:hover {
+  background-color: #fff;
+}
+
+nav .hamburger-icon button:hover .line {
+  background-color: teal;
 }
 
 nav .hamburger-icon button .line {
@@ -177,9 +195,8 @@ nav ul li a:hover,
 /* HERO SECTION */
 .header-hero {
   position: relative;
-  background-color: red;
   min-height: 100vh;
-  background-image: url('./assets/fero_01.jpg');
+  background-image: url('../public/images/hero/hero_02.jpg');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -206,9 +223,29 @@ nav ul li a:hover,
   text-align: center;
 }
 
+/* SPECIAL SECTION */
+.carousel-content {
+  display: flex;
+}
+
+.carousel-description {
+  color: #242424;
+  padding: 1rem;
+  flex: 1;
+}
+
+.carousel-description p {
+  text-align: center;
+}
+
+.carousel-image {
+  flex-basis: 50%;
+}
+
 /* PARTNERS LOGOS SECTION */
 .partners-logos {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -226,15 +263,90 @@ nav ul li a:hover,
   vertical-align: middle;
 }
 
+/* PRODUCTS IZDVOJENO */
+.products-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.products-container div {
+  background-color: #eeeeee;
+  flex: 0 0 23%;
+  margin: 1% ;
+  position: relative;
+}
+
+.products-container img {
+  margin-bottom: 2rem;
+}
+
+.products-container div p {
+  color: #242424;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
+}
+
+.card {
+  border-radius: 4px;
+  padding: 0.5rem;
+  /* background-color: purple; */
+  box-shadow: 2px 4px 0 rgba(255, 255, 255, 0.2), 0 4px 10px 0 rgba(255, 255, 255, 0.19);
+}
+
+/* CONTACT SECTION */
+.contact-info {
+  display: flex;
+}
+
+.contact-info h2, .contact-info p {
+  text-align: left;
+}
+
+.contact-info .info {
+  display: flex;
+}
+
+.contact-info .city-info {
+  flex: 1;
+}
+
+.contact-info div {
+  border: 1px solid red;
+}
+
+/* FOOTER SECTION */
+footer p {
+  font-size: 1rem;
+  line-height: 1;
+}
+
 /* @MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+  .header-hero .intro-heading {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
 
 @media only screen and (max-width: 600px) {
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
   nav .hamburger-icon {
     display: block;
   }
 
   nav .nav-links {
-      /* padding: 0 20rem; */
       position: fixed;
       top: 70px;
       left: 100%;
@@ -242,7 +354,6 @@ nav ul li a:hover,
       height: 90vh;
       background-color: black;
       z-index: 100;
-      border: 1px solid red;
     }
 
     nav ul {
@@ -255,4 +366,32 @@ nav ul li a:hover,
       display: inline-block;
     }
 
+    .header-hero .intro-heading {
+      width: 95%;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    .carousel-content {
+      flex-direction: column;
+    }
+
+    .products-container div {
+      flex: 0 0 48%;
+    }
+
+    .partners-logos div {
+      margin-right: 8px;
+      width: 70px;
+      max-width: 70px; 
+    }
+
+}
+
+@media only screen and (max-width: 360px) {
+  .products-container div {
+    flex: 0 0 100%;
+  }
 }
