@@ -34,6 +34,11 @@ p {
   padding-bottom: 1rem;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -373,6 +378,7 @@ nav ul li a:hover,
 }
 
 .izdvojeno .card {
+  background-color: #eeeeee;
   box-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
 }
 
