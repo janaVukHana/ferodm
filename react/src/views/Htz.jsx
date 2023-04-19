@@ -1,13 +1,24 @@
 import Hero from "../components/Hero"
+import Breadcrumb from "../components/Breadcrumb"
+import AsortimanCard from "../components/AsortimanCard"
 
 export default function Htz() {
     return (
         <>
-            <Hero title="Htz,...">
-                <p>Some hero text</p>
+            <Hero title="Htz oprema">
+                <p>U ponudi imamo HTZ opremu poznatih proizvođača kao što su Panda, NEO, Wurth, Springer…</p>
             </Hero>
-            <div>Here goes brad crumbs</div>
-            <div>Here goes some more text and images</div>
+            <Breadcrumb currentPage="htz" />
+            <AsortimanCard 
+                title="Ponuda"
+                listElements={[
+                    'Cipele (plitke, duboke)',
+                    'Cizme (gumene, Tigar)',
+                    'Zastitne rukavice',
+                    'Zastitne naocare'
+                ]}
+                image="htz_01.jpeg"
+            />
         </>
     )
 }

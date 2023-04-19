@@ -40,7 +40,7 @@ export default function Asortiman() {
                         </div>
                         <div className="card">
                             <img src="./images/asortiman/htz_01.jpeg" alt="htz oprema" />
-                            <Link to="/asortiman/alat"><h3>HTZ oprema</h3></Link>
+                            <Link to="/asortiman/htz"><h3>HTZ oprema</h3></Link>
                         </div>
                         <div className="card">
                             <img src="./images/asortiman/bastenski_program_08.png" alt="bastenska oprema" />

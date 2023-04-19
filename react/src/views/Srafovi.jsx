@@ -1,13 +1,31 @@
 import Hero from "../components/Hero"
+import Breadcrumb from "../components/Breadcrumb"
+import AsortimanCard from "../components/AsortimanCard"
 
 export default function Srafovi() {
     return (
         <>
-            <Hero title="Srafovi,...">
-                <p>Some hero text</p>
+            <Hero title="Srafovska roba">
+                <p>U našoj ponudi imamo vijke raznih proizvođača i različitog kvaliteta 5.6, 8.8, 10.9</p>
             </Hero>
-            <div>Here goes brad crumbs</div>
-            <div>Here goes some more text and images</div>
+            <Breadcrumb currentPage="srafovi" />
+            <AsortimanCard 
+                title="Ponuda"
+                listElements={[
+                    'Masinski vijak 5.6 ili 8.8 (051 ili 053)',
+                    'Torban vijak',
+                    'Iver vijak',
+                    'Vijak za drvo',
+                    'Gips vijci',
+                    'Lim vijci',
+                    'Anker vijci',
+                    'SPECIJALNE VRSTE VIJAKA:',
+                    'Matice, podloske, kuke razlicitih dimenzija',
+                    'Navojne sipke od M4 do M32',
+                    'TIPLE RAZLICITIH DIMENZIJA I PROIZVODJACA'
+                ]}
+                image="srafovi_00.png"
+            />
         </>
     )
 }

@@ -1,13 +1,26 @@
 import Hero from "../components/Hero"
+import Breadcrumb from "../components/Breadcrumb"
+import AsortimanCard from "../components/AsortimanCard"
 
 export default function Elektro() {
     return (
         <>
-            <Hero title="Elektro,...">
-                <p>Some hero text</p>
+            <Hero title="Elektro materijal">
+                <p>
+                    U ponudi imamo elektro materijal 
+                    poznatih proizvođača kao što su ELCO, ALING, OSRAM, TUNSGRAM…
+                </p>
             </Hero>
-            <div>Here goes brad crumbs</div>
-            <div>Here goes some more text and images</div>
+            <Breadcrumb currentPage="elektro" />
+            <AsortimanCard 
+                title="Ponuda" 
+                listElements={[
+                    'Kablovi i produzni kablovi',
+                    'Sijalice, grla i prekidaci',
+                    'Uticnice i osiguraci'
+                ]} 
+                image="elektro_01.jpeg" 
+            />
         </>
     )
 }

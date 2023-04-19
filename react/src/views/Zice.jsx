@@ -1,13 +1,14 @@
 import Hero from "../components/Hero"
+import Breadcrumb from "../components/Breadcrumb"
+import AsortimanCard from "../components/AsortimanCard"
 
 export default function Zice() {
     return (
         <>
-            <Hero title="Zice,...">
-                <p>Some hero text</p>
+            <Hero title="Zice, pletiva, mreze, sita">
+                <p>Stranica je u izradi</p>
             </Hero>
-            <div>Here goes brad crumbs</div>
-            <div>Here goes some more text and images</div>
+            <Breadcrumb currentPage="zice" />
         </>
     )
 }

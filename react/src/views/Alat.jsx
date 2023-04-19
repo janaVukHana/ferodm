@@ -1,19 +1,41 @@
-import { Link } from "react-router-dom"
 import Hero from "../components/Hero"
+import Breadcrumb from "../components/Breadcrumb"
+import AsortimanCard from "../components/AsortimanCard"
 
 export default function Alat() {
     return (
         <>
-            <Hero title="Alat,...">
-                <p>Some hero text</p>
+            <Hero title="Rucni alat">
+                <p>
+                    U ponudi imamo ručni alat poznatih proizvođača kao što su Modex, Festa, 
+                    Topex, Muta, Unior…
+                </p>
             </Hero>
-            {/* TODO: make breadcrumb component */}
-            <section className="light-section" style={{padding: '0.5rem 3rem', position: 'absolute', bottom: '100px', left: '20px'}}>
-                <div class="inner-container">
-                    <Link to="/asortiman" style={{color: 'teal', textDecoration: 'underline'}}>asortiman</Link> / alati
-                </div>
-            </section>
-            <div>Here goes some more text and images</div>
+            <Breadcrumb currentPage="alati" />
+            <AsortimanCard 
+                title="Ponuda alata"
+                listElements={[
+                    'Zidarski (fangle, ferdaske, kofe, mistrije...)',
+                    'Keramicarski alati',
+                    'Bastenski (lopate, asovi, sekire, grablje...)',
+                    'Elektricarski alati',
+                    'Mehanicarski alati'
+                ]}
+                image="rucni_alat.jpeg"
+                order=""
+            />
+            {/* <AsortimanCard 
+                title="Ponuda alata"
+                listElements={[
+                    'Zidarski (fangle, ferdaske, kofe, mistrije...)',
+                    'Keramicarski alati',
+                    'Bastenski (lopate, asovi, sekire, grablje...)',
+                    'Elektricarski alati',
+                    'Mehanicarski alati'
+                ]}
+                image="rucni_alat.jpeg"
+                order="1"
+            /> */}
         </>
     )
 }

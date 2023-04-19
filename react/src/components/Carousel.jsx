@@ -4,8 +4,8 @@ export default function Carousel() {
             <div className="inner-container">
                 <div className="carousel-content">
                     <div className="carousel-description">
-                        <h2>Desc heading</h2>
-                        <p>Desc paragraph lorem ipsum</p>
+                        <h2>Ogradjivanje</h2>
+                        <p>Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....</p>
                     </div>
                     <div className="carousel-image">
                         <img src="./images/hero/hero_graphite.jpg" alt="" />

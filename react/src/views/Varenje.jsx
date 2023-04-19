@@ -1,13 +1,24 @@
 import Hero from "../components/Hero"
+import Breadcrumb from "../components/Breadcrumb"
+import AsortimanCard from "../components/AsortimanCard"
 
 export default function Varenje() {
     return (
         <>
-            <Hero title="Varenje,...">
-                <p>Some hero text</p>
+            <Hero title="Brusno rezni i varilacki program">
+                <p>Flexco, Scorpio, Duke, Dronco, Jasenice, Oerlikon, Varstroj, Wurth…</p>
             </Hero>
-            <div>Here goes brad crumbs</div>
-            <div>Here goes some more text and images</div>
+            <Breadcrumb currentPage="varenje" />
+            <AsortimanCard 
+                title="Ponuda"
+                listElements={[
+                    'Brusne i rezne ploce svih dimenzija',
+                    'Elektrode razlicitih vrsta',
+                    'Maske, stakla, naocare',
+                    'CO2 zica za varenje'
+                ]}
+                image="varilacki_program.jpeg"
+            />        
         </>
     )
 }

@@ -28,6 +28,13 @@ h2 {
   margin-bottom: 2rem;
 }
 
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  /* text-align: left; */
+  margin-bottom: .5rem;
+}
+
 p {
   font-size: 1.4rem;
   line-height: 1.4;
@@ -402,6 +409,24 @@ nav ul li a:hover,
 .asortiman img, .izdvojeno img {
     max-width: auto;
     height: 90%;
+}
+
+/* SHOW SINGLE ASORTIMAN PAGE */
+.asortiman-intro {
+  display: flex;
+}
+
+.asortiman-intro li {
+  margin-bottom: 0.5rem;
+}
+
+.asortiman-content, .asortiman-image {
+  flex: 1;
+  padding: 1rem;
+}
+
+.asortiman-image img {
+  width: 100%;
 }
 
 /* FOOTER SECTION */
