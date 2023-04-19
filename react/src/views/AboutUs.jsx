@@ -22,8 +22,6 @@ export default function AboutUs() {
                     </p>
                 </div>
             </section>
-            {/* osmisli kako ide asortiman show page */}
-            {/* osmisli about us page */}
         </>
     )
 }

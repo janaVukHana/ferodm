@@ -1,33 +1,33 @@
 export default function ProizvodiIzdvojeno() {
     return (
-        <section className="dark-section">
+        <section className="izdvojeno dark-section">
             <div className="inner-container">
                 <h2>Izdvajamo iz ponude</h2>
 
-                <div className="products-container">
+                <div className="cards-container">
                     <div className="card">
                         <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <p>Elekticna kosilica</p>
+                        <h3>Elekticna kosilica</h3>
                     </div>
                     <div className="card">
                         <img src="./images/products/sac-gusani.webp" alt="elektricna kosilica" />
-                        <p>Sac gusani</p>
+                        <h3>Sac gusani</h3>
                     </div>
                     <div className="card">
                         <img src="./images/products/trimer.webp" alt="elektricna kosilica" />
-                        <p>Trimer kosilica</p>
+                        <h3>Trimer kosilica</h3>
                     </div>
                     <div className="card">
                         <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <p>Elekticna kosilica</p>
+                        <h3>Elekticna kosilica</h3>
                     </div>
                     <div className="card">
                         <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <p>Elekticna kosilica</p>
+                        <h3>Elekticna kosilica</h3>
                     </div>
                     <div className="card">
                         <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <p>Elekticna kosilica</p>
+                        <h3>Elekticna kosilica</h3>
                     </div>
                 </div>
                 

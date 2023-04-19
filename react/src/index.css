@@ -35,7 +35,8 @@ p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
   vertical-align: middle;
 }
 
@@ -46,7 +47,7 @@ button {
 }
 
 section {
-  padding: 3rem 0;
+  padding: 3rem 2rem;
 }
 
 .inner-container {
@@ -271,41 +272,6 @@ nav ul li a:hover,
   vertical-align: middle;
 }
 
-/* PRODUCTS IZDVOJENO */
-.products-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.products-container div {
-  background-color: #eeeeee;
-  flex: 0 0 23%;
-  margin: 1% ;
-  position: relative;
-}
-
-.products-container img {
-  margin-bottom: 2rem;
-}
-
-.products-container div p {
-  color: #242424;
-  text-align: center;
-  padding-bottom: 0.5rem;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  bottom: 0;
-}
-
-.card {
-  border-radius: 4px;
-  padding: 0.5rem;
-  /* background-color: purple; */
-  box-shadow: 2px 4px 0 rgba(255, 255, 255, 0.2), 0 4px 10px 0 rgba(255, 255, 255, 0.19);
-}
-
 /* CONTACT SECTION */
 .contact-info {
   display: flex;
@@ -387,6 +353,51 @@ nav ul li a:hover,
   color: teal;
 }
 
+/* ASORTIMAN SECTION */
+/* PRODUCTS IZDVOJENO SECTION */
+
+.cards-container {
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+.card {
+  flex-basis: calc(33.33% - 20px);
+	height: 200px;
+	margin-bottom: 30px;
+	text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.izdvojeno .card {
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.7);
+}
+
+.asortiman h3, .izdvojeno h3 {
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  width: 90%;;
+  margin: 0 auto;
+}
+
+.izdvojeno h3 {
+  background-color: #fff;
+  color: #242424;
+}
+
+.asortiman h3 {
+  background-color: #242424;
+  color: #fff;
+}
+
+.asortiman img, .izdvojeno img {
+    max-width: auto;
+    height: 90%;
+}
+
 /* FOOTER SECTION */
 footer p {
   font-size: 1rem;
@@ -421,6 +432,12 @@ footer p {
   h1 {
     font-size: 2.5rem;
   }
+  
+  .card {
+    flex-basis: calc(50% - 20px);
+    height: 200px;
+  }
+  
 }
 
 @media only screen and (max-width: 600px) {
@@ -486,11 +503,10 @@ footer p {
     .contact-form {
       width: 95%;
     }
-
-}
-
-@media only screen and (max-width: 360px) {
-  .products-container div {
-    flex: 0 0 100%;
+  
+  .card {
+    flex-basis: calc(100% - 20px);
+    height: 200px;
   }
+
 }
