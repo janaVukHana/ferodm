@@ -46,7 +46,12 @@ export default function Product() {
                     <tbody>
                         {products.map(product => {
                             return (
-                                <ProductItem key={product.id} id={product.id} title={product.title} itemDelete={getProducts} />
+                                <ProductItem 
+                                    key={product.id} 
+                                    id={product.id} 
+                                    title={product.title} 
+                                    image={product.image}
+                                    itemDelete={getProducts} />
                             )
                         })}
                     </tbody>

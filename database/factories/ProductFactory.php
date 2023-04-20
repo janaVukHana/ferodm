@@ -18,7 +18,7 @@ class ProductFactory extends Factory
     {
         return [
             'title' => fake()->title(),
-            // 'image' => fake()->image()
+            'image' => fake()->image()
         ];
     }
 }

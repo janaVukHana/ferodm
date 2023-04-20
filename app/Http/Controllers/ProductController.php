@@ -23,8 +23,15 @@ class ProductController extends Controller
     {
         // MOZE I StoreProductRequest $request CLASS DA SE NAPRAVI kao CodeHolic
         $formData = $request->validate([
-            'title' => ['required', 'max:10']
+            'title' => ['required', 'max:10'],
+            'image' => ['required']
         ]);
+
+        $image = request()->file('image');
+        $image_name = time().'.'.$image->getClientOriginalExtension();
+        $image->move('images/',$image_name);
+
+        $formData['image'] = $image_name; 
 
         $product = Product::create($formData);
 
@@ -54,6 +61,8 @@ class ProductController extends Controller
      */
     public function destroy(Product $product)
     {
+        unlink('images/' . $product['image']);
+        
         $product->delete();
         return response('', 204);
     }

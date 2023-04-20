@@ -1,7 +1,10 @@
 import { Link } from "react-router-dom"
 import axiosClient from "../axios-client"
+import { useStateContext } from "../contexts/ContextProvider"
 
-export default function ProductItem({id, title, itemDelete}) {
+export default function ProductItem({id, title, image, itemDelete}) {
+
+    const {setNotification} = useStateContext()
 
     const onDelete = (e) => {
         e.preventDefault()
@@ -12,8 +15,8 @@ export default function ProductItem({id, title, itemDelete}) {
         
         axiosClient.delete('/products/'+id)
             .then(() => {
-                console.log('product deleted')
                 // show notification
+                setNotification('Product deleted...')
                 itemDelete()
             })
     }
@@ -22,7 +25,7 @@ export default function ProductItem({id, title, itemDelete}) {
         <tr>
             <td>{id}</td>
             <td>{title}</td>
-            <td>Image</td>
+            <td><div className="thumbnail"><img src={`http://api.localhost:8000/images/${image}`} alt={title} /></div></td>
             <td>
                 <Link className="btn btn-edit" to={'/products/'+id}>Edit</Link>
                 &nbsp;

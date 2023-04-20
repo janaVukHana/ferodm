@@ -2,24 +2,39 @@ import { useRef } from "react"
 import Hero from "./Hero"
 import axiosClient from "../axios-client"
 import { useState } from "react"
+import { useStateContext } from "../contexts/ContextProvider"
+import { useNavigate } from "react-router-dom"
 
 export default function ProductForm() {
 
-    const titleRef = useRef()
+    const navigate = useNavigate()
 
-    const [errors, setErrors] = useState(false)
+    const titleRef = useRef()
+    const fileRef = useRef()
+
+    const {setNotification} = useStateContext()
+
+    const [imageSelected, setImageSelected] = useState(false)
+
+    const [errors, setErrors] = useState(null)
 
     const handleSubmit = (e) => {
         e.preventDefault()
 
         const payload = {
-            'title': titleRef.current.value
+            'title': titleRef.current.value,
+            'image': fileRef.current.files[0]
         }
 
-        axiosClient.post('/products', payload)
+        const formData = new FormData();
+            formData.append('title', payload.title);
+            payload.image && formData.append('image', payload.image);
+
+        axiosClient.post('/products', formData)
             .then(({data}) => {
-                // todo: notification
+                setNotification('Product addedd...')
                 // todo: navigate to other page
+                navigate('/dashboard')
             })
             .catch((err) => {
                 const response = err.response
@@ -38,6 +53,28 @@ export default function ProductForm() {
             <div className="contact-form">
                 <form onSubmit={handleSubmit}>
                     <input ref={titleRef} type="text" placeholder="Naziv proizvoda" />
+                    
+                    <div className="file-input">
+                            <input
+                                ref={ fileRef }
+                                onChange={e => {
+                                    setImageSelected(e.target.files[0])
+                                }}
+                                type="file"
+                                id="image"
+                            />
+                    </div>
+
+                    {/* show selected aka. image preview */}
+                    {imageSelected && 
+                        <div style={{width: '70px'}}>
+                            <img 
+                                src={URL.createObjectURL(imageSelected)}
+                                alt="project image preview" 
+                                className="edit-preview-img"
+                            />
+                        </div>
+                    }
                     
                     <button>Dodaj</button>
                 </form>

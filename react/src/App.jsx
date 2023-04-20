@@ -22,8 +22,20 @@ import Login from './views/Login'
 import Dashboard from './views/Dashboard'
 import ProductForm from './components/ProductForm'
 import Footer from './components/Footer'
+import { useStateContext } from './contexts/ContextProvider'
+import { useEffect } from 'react'
 
 function App() {
+
+  const {notification, setNotification} = useStateContext()
+
+  useEffect(() => {
+    if(notification) {
+      setTimeout(() => {
+        setNotification(false)
+      }, 5000)
+    }
+  })
 
   return (
     <BrowserRouter>
@@ -62,6 +74,7 @@ function App() {
         </main>
 
         <Footer />
+        {notification && <p className='notification'>{notification}</p>}
       </div>
     </BrowserRouter>
   )

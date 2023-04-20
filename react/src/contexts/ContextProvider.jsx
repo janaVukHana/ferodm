@@ -10,8 +10,8 @@ const StateContext = createContext({
     setNotification: () => {},
     showMenu: null,
     setShowMenu: () => {},
-    loading: null,
-    setLoading: () => {}
+    // loading: null,
+    // setLoading: () => {}
 })
 
 // Now create context provider
@@ -21,7 +21,7 @@ export const ContextProvider = ({children}) => {
     const [token, _setToken] = useState(localStorage.getItem('ACCESS_TOKEN'))
     const [notification, setNotification] = useState('')
     const [showMenu, setShowMenu] = useState(false)
-    const [loading, setLoading] = useState(false)
+    // const [loading, setLoading] = useState(false)
 
     const setToken = (token) => {
         _setToken(token)
@@ -42,8 +42,8 @@ export const ContextProvider = ({children}) => {
             setNotification,
             showMenu, 
             setShowMenu,
-            loading,
-            setLoading
+            // loading,
+            // setLoading
         }}>
             {children}
         </StateContext.Provider>
