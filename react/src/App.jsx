@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import ScrollToTop from './components/ScrollToTop'
+import Protected from './components/Protected'
 import Navbar from './components/Navbar'
 import Home from './views/Home'
 import Asortiman from './views/Asortiman'
@@ -51,9 +52,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
 
             {/* LOGIN AND DASHBOARD */}
-            {/* <Route path="/dashboard" element={<Protected><Dashboard /></Protected>} /> */}
             <Route path="/login" element={<Login />} />
-            <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/dashboard" element={<Protected><Dashboard /></Protected>} />
 
           </Routes>
         </main>
