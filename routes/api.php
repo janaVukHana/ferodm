@@ -14,9 +14,15 @@ use App\Http\Controllers\AuthController;
 | be assigned to the "api" middleware group. Make something great!
 |
 */
-
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
+Route::middleware('auth:sanctum')->group(function() {
+    Route::get('/user', function(Request $request) {
+        return $request->user();
+    });
+    Route::post('/logout', [AuthController::class, 'logout']);
+    // Route::apiResource('/projects', ProjectController::class,['except'=>['index']]);
+    // Route::get('/contact-us', [ContactController::class, 'index']);
+    // Route::get('/contact-us/{contact}', [ContactController::class, 'show']);
+    // Route::delete('/contact-us/{contact}', [ContactController::class, 'destroy']);
 });
 
 // UNPROTECTED ROUTES
