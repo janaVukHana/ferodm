@@ -20,6 +20,7 @@ import Contact from './views/Contact'
 import AboutUs from './views/AboutUs'
 import Login from './views/Login'
 import Dashboard from './views/Dashboard'
+import ProductForm from './components/ProductForm'
 import Footer from './components/Footer'
 
 function App() {
@@ -54,6 +55,8 @@ function App() {
             {/* LOGIN AND DASHBOARD */}
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Protected><Dashboard /></Protected>} />
+            
+            <Route path="/products/new" element={<Protected><ProductForm /></Protected>} />
 
           </Routes>
         </main>

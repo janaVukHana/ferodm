@@ -21,7 +21,16 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // MOZE I StoreProductRequest $request CLASS DA SE NAPRAVI kao CodeHolic
+        $formData = $request->validate([
+            'title' => ['required', 'max:10']
+        ]);
+
+        $product = Product::create($formData);
+
+        return response(new ProductResource($product), 201);
+        // 201 == the request has succeeded and has led to the creation of a resource.
+
     }
 
     /**

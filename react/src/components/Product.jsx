@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react"
+import { Link } from "react-router-dom";
 import axiosClient from "../axios-client";
 import ProductItem from "./ProductItem";
 
@@ -28,7 +29,8 @@ export default function Product() {
             <div className="row">
                 <h2>My Products</h2>
                 {/* <Link to="/projects/new" className="btn-add">Add New</Link> */}
-                <span className="btn btn-add">Add New</span>
+                <Link to="/products/new" className="btn btn-add">Add New</Link>
+                {/* <span className="btn btn-add">Add New</span> */}
             </div>
             {loading && <p>Loading ...</p>}
             {!loading &&
