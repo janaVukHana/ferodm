@@ -89,8 +89,37 @@ section {
   text-align: left;
 }
 
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 1rem;
+}
+
 .mb-1 {
   margin-bottom: 0.5rem;
+}
+
+.error {
+  background-color: red;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 1rem;
+}
+
+.password-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.password-input-container button {
+  flex: 1;
 }
 
 /* NAVIGATION SECTION */

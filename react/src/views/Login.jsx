@@ -6,6 +6,13 @@ import Hero from "../components/Hero";
 
 export default function Login() {
 
+    const [showPassword, setShowPassword] = useState(false)
+
+    const handleClick = (e) => {
+        e.preventDefault()
+        setShowPassword(!showPassword)
+    }
+
     const emailRef = useRef()
     const passwordRef = useRef()
 
@@ -53,13 +60,16 @@ export default function Login() {
                 <div className="contact-form">
                     <form onSubmit={handleSubmit}>
                         <input ref={emailRef} type="email" placeholder="Email adresa" />
-                        <input ref={passwordRef} type="password" placeholder="Sifra" />
+                        <div class="password-input-container">
+                            <input ref={passwordRef} type={showPassword ? 'password' : 'text'} placeholder="Sifra" />
+                            <button className="mb-1" onClick={handleClick}>Show</button>
+                        </div>
                         <button>Login</button>
                     </form>
 
                     {errors && <div className='error'>
                     {Object.keys(errors).map(key => (
-                        <p key={key}>{errors[key][0]}</p>
+                        <p className="pb-0" key={key}>{errors[key][0]}</p>
                     ))}
                 </div>}
                 </div>
