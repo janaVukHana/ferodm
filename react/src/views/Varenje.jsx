@@ -12,10 +12,10 @@ export default function Varenje() {
             <AsortimanCard 
                 title="Ponuda"
                 listElements={[
-                    'Brusne i rezne ploce svih dimenzija',
-                    'Elektrode razlicitih vrsta',
-                    'Maske, stakla, naocare',
-                    'CO2 zica za varenje'
+                    'Brusne i rezne ploče svih dimenzija',
+                    'Elektrode različitih vrsta',
+                    'Maske, stakla, naočare',
+                    'CO2 žica za varenje'
                 ]}
                 image="varilacki_program.jpeg"
             />        

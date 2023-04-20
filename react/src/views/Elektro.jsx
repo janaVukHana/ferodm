@@ -15,9 +15,9 @@ export default function Elektro() {
             <AsortimanCard 
                 title="Ponuda" 
                 listElements={[
-                    'Kablovi i produzni kablovi',
-                    'Sijalice, grla i prekidaci',
-                    'Uticnice i osiguraci'
+                    'Kablovi i produžni kablovi',
+                    'Sijalice, grla i prekidači',
+                    'Utičnice i osigurači'
                 ]} 
                 image="elektro_01.jpeg" 
             />

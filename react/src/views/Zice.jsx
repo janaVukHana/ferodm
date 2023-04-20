@@ -7,13 +7,13 @@ export default function Zice() {
         <>
             <Hero title="Zice, pletiva, mreze, sita">
                 <p>
-                široku paletu žica, pletiva, mreža i sita za različite namene. Bilo da Vam treba 
+                Nudimo široku paletu žica, pletiva, mreža i sita za različite namene. Bilo da Vam treba 
                 zaštitna ograda, ograđivanje dvorišta ili voćnjaka, zaštita od insekata ili neka 
                 druga primena, mi imamo sve što Vam treba. 
-                Naši proizvodi su visokog kvaliteta i ispunjavaju najviše standarde industrije,
+                Naši proizvodi su visokog kvaliteta i ispunjavaju najviše standarde industrije.
                 </p>
             </Hero>
-            <Breadcrumb currentPage="zice" />
+            <Breadcrumb currentPage="žice" />
             <section className="light-section">
                 <div className="inner-container">
                     <div className="asortiman-intro">

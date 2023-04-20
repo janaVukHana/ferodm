@@ -14,8 +14,8 @@ export default function Htz() {
                 listElements={[
                     'Cipele (plitke, duboke)',
                     'Cizme (gumene, Tigar)',
-                    'Zastitne rukavice',
-                    'Zastitne naocare'
+                    'Zaštitne rukavice',
+                    'Zaštitne naočare'
                 ]}
                 image="htz_01.jpeg"
             />

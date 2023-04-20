@@ -4,7 +4,7 @@ export default function Carousel() {
             <div className="inner-container">
                 <div className="carousel-content">
                     <div className="carousel-description">
-                        <h2>Ogradjivanje</h2>
+                        <h2>Ograđivanje</h2>
                         <p>Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....</p>
                     </div>
                     <div className="carousel-image">

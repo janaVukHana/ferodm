@@ -14,11 +14,11 @@ export default function Moleraj() {
                 listElements={[
                     'Silikoni, pur pene, razni lepkovi',
                     'Boje i lakovi raznih namena',
-                    'Cetke, valjci, spahtle',
+                    'Četke, valjci, špahtle',
                     'Poludisperzije, disperzije, fasadne boje',
-                    'Krep tranke, izolir trake i trake za druge namene',
-                    'Premazi, podloge, ispune, sprejevi, smirgle',
-                    'Razredjivaci'
+                    'Krep trake, izolir trake i trake za druge namene',
+                    'Premazi, podloge, ispune, sprejevi, šmirgle',
+                    'Razređivači'
                 ]}
                 image="boje_farbe_01.jpg"
             />

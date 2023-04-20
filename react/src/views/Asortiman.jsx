@@ -18,52 +18,52 @@ export default function Asortiman() {
                 <div className="inner-container">
                     <div className="cards-container">
                         <div className="card">
-                            <img src="./images/asortiman/zica.jpg" alt="zica" />
-                            <Link to="/asortiman/zice"><h3>Žica, pletiva, mreže, sita</h3></Link>
+                            <Link to="/asortiman/zice"><img src="./images/asortiman/zica.jpg" alt="zica" /></Link>
+                            <h3>Žica, pletiva, mreže, sita</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/stubovi.jpg" alt="stubovi" />
-                            <Link to="/asortiman/stubovi"><h3>Stubovi, španeri, lanci, sajle</h3></Link>
+                            <Link to="/asortiman/stubovi"><img src="./images/asortiman/stubovi.jpg" alt="stubovi" /></Link>
+                            <h3>Stubovi, španeri, lanci, sajle</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/ekseri.png" alt="ekseri" />
-                            <Link to="/asortiman/ekseri"><h3>Ekseri</h3></Link>
+                            <Link to="/asortiman/ekseri"><img src="./images/asortiman/ekseri.png" alt="ekseri" /></Link>
+                            <h3>Ekseri</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/srafovi_00.png" alt="srafovi" />
-                            <Link to="/asortiman/srafovi"><h3>Šrafovska roba</h3></Link>
+                            <Link to="/asortiman/srafovi"><img src="./images/asortiman/srafovi_00.png" alt="srafovi" /></Link>
+                            <h3>Šrafovska roba</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/stolarija_00.png" alt="stolarija" />
-                            <Link to="/asortiman/stolarija"><h3>Stolarski i bravarski program</h3></Link>
+                            <Link to="/asortiman/stolarija"><img src="./images/asortiman/stolarija_00.png" alt="stolarija" /></Link>
+                            <h3>Stolarski i bravarski program</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/boje_farbe_01.jpg" alt="farbe i lakovi" />
-                            <Link to="/asortiman/moleraj"><h3>Boje, farbe i molerski program</h3></Link>
+                            <Link to="/asortiman/moleraj"><img src="./images/asortiman/boje_farbe_01.jpg" alt="farbe i lakovi" /></Link>
+                            <h3>Boje, farbe i molerski program</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/rucni_alat_01.jpeg" alt="rucni alat" />
-                            <Link to="/asortiman/alat"><h3>Ručni alat</h3></Link>
+                            <Link to="/asortiman/alat"><img src="./images/asortiman/rucni_alat_01.jpeg" alt="rucni alat" /></Link>
+                            <h3>Ručni alat</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/htz_01.jpeg" alt="htz oprema" />
-                            <Link to="/asortiman/htz"><h3>HTZ oprema</h3></Link>
+                            <Link to="/asortiman/htz"><img src="./images/asortiman/htz_01.jpeg" alt="htz oprema" /></Link>
+                            <h3>HTZ oprema</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/bastenski_program_08.png" alt="bastenska oprema" />
-                            <Link to="/asortiman/basta"><h3>Baštenski program</h3></Link>
+                            <Link to="/asortiman/basta"><img src="./images/asortiman/bastenski_program_08.png" alt="bastenska oprema" /></Link>
+                            <h3>Baštenski program</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/varilacki_program.jpeg" alt="varilac" />
-                            <Link to="/asortiman/varenje"><h3>Brusno rezni i varilački program</h3></Link>
+                            <Link to="/asortiman/varenje"><img src="./images/asortiman/varilacki_program.jpeg" alt="varilac" /></Link>
+                            <h3>Brusno rezni i varilački program</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/domacinstvo_00.png" alt="plastikara" />
-                            <Link to="/asortiman/plastika"><h3>Domaćinstvo i plastika</h3></Link>
+                            <Link to="/asortiman/plastika"><img src="./images/asortiman/domacinstvo_00.png" alt="plastikara" /></Link>
+                            <h3>Domaćinstvo i plastika</h3>
                         </div>
                         <div className="card">
-                            <img src="./images/asortiman/elektro_01.jpeg" alt="elektro oprema" />
-                            <Link to="/asortiman/elektro"><h3>Elektromaterijal</h3></Link>
+                            <Link to="/asortiman/elektro"><img src="./images/asortiman/elektro_01.jpeg" alt="elektro oprema" /></Link>
+                            <h3>Elektromaterijal</h3>
                         </div>
                     </div>
                 </div>

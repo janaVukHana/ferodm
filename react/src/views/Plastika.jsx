@@ -14,11 +14,11 @@ export default function Plastika() {
                 listElements={[
                     'Dimovodni program',
                     'Burad, baloni, kace',
-                    'Merdevine AL i sa sirokim gazistima',
+                    'Merdevine AL i sa širokim gazištima',
                     'Kolica i delovi za kolica',
-                    'Metle, cetke',
-                    'Plasticne posude, kofe, skafovi',
-                    'Kotlici, oranije, breneri, plamenici',
+                    'Metle, četke',
+                    'Plastične posude, kofe, skafovi',
+                    'Kotlići, oranije, breneri, plamenici',
                     'Pojilice, hranilice, PVC posude'
                 ]}
                 image="domacinstvo_00.png"

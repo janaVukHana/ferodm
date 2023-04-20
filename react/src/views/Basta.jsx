@@ -5,20 +5,20 @@ import Hero from "../components/Hero"
 export default function Basta() {
     return (
         <>
-            <Hero title="Bastenski program">
+            <Hero title="Baštenski program">
                 {/* <p>Some hero text</p> */}
             </Hero>
-            <Breadcrumb currentPage="basta" />
+            <Breadcrumb currentPage="bašta" />
             <AsortimanCard 
                 title="Ponuda"
                 listElements={[
                     'Lopatice, grabljice',
                     'Creva za zalivanje (kotur ili na merenje)',
                     'Prskalice ili kante za zalivanje',
-                    'Ograde za bastu',
+                    'Ograde za baštu',
                     'Saksije i humus',
-                    'Bastenski stapovi i pritke raznih dimenzija',
-                    'Bastenske makaze (voce, ziva ograda, ruze...)'
+                    'Baštenski stapovi i pritke raznih dimenzija',
+                    'Baštenske makaze (voće, živa ograda, ruže...)'
                 ]}
                 image="bastenski_program_08.png"
             />

@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +20,13 @@ Route::middleware('auth:sanctum')->group(function() {
         return $request->user();
     });
     Route::post('/logout', [AuthController::class, 'logout']);
-    // Route::apiResource('/projects', ProjectController::class,['except'=>['index']]);
+    Route::apiResource('/products', ProductController::class,['except'=>['index']]);
     // Route::get('/contact-us', [ContactController::class, 'index']);
     // Route::get('/contact-us/{contact}', [ContactController::class, 'show']);
     // Route::delete('/contact-us/{contact}', [ContactController::class, 'destroy']);
 });
 
 // UNPROTECTED ROUTES
+Route::get('/products', [ProductController::class, 'index']);
+
 Route::post('/login', [AuthController::class, 'login']);

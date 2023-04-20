@@ -5,7 +5,7 @@ import AsortimanCard from "../components/AsortimanCard"
 export default function Stubovi() {
     return (
         <>
-            <Hero title="Stubovi, spaneri, lance, sajle">
+            <Hero title="Stubovi, španeri, lanci, sajle">
                 <p>
                     Betonski stub je visoko kvalitetne izrade sa trostruko upredenim
                     čeličnim žicama, poseduje elastičnost koja doprinosi dužem veku 

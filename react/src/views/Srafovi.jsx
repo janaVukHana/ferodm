@@ -12,7 +12,7 @@ export default function Srafovi() {
             <AsortimanCard 
                 title="Ponuda"
                 listElements={[
-                    'Masinski vijak 5.6 ili 8.8 (051 ili 053)',
+                    'Mašinski vijak 5.6 ili 8.8 (051 ili 053)',
                     'Torban vijak',
                     'Iver vijak',
                     'Vijak za drvo',
@@ -20,9 +20,9 @@ export default function Srafovi() {
                     'Lim vijci',
                     'Anker vijci',
                     'SPECIJALNE VRSTE VIJAKA:',
-                    'Matice, podloske, kuke razlicitih dimenzija',
-                    'Navojne sipke od M4 do M32',
-                    'TIPLE RAZLICITIH DIMENZIJA I PROIZVODJACA'
+                    'Matice, podloške, kuke različitih dimenzija',
+                    'Navojne šipke od M4 do M32',
+                    'TIPLE RAZLIČITIH DIMENZIJA I PROIZVOĐAČA'
                 ]}
                 image="srafovi_00.png"
             />

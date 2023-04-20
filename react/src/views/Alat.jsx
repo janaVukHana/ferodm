@@ -16,10 +16,10 @@ export default function Alat() {
                 title="Ponuda alata"
                 listElements={[
                     'Zidarski (fangle, ferdaske, kofe, mistrije...)',
-                    'Keramicarski alati',
-                    'Bastenski (lopate, asovi, sekire, grablje...)',
-                    'Elektricarski alati',
-                    'Mehanicarski alati'
+                    'Keramičarski alati',
+                    'Baštenski (lopate, ašovi, sekire, grablje...)',
+                    'Električarski alati',
+                    'Mehaničarski alati'
                 ]}
                 image="rucni_alat.jpeg"
                 order=""

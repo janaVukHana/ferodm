@@ -83,6 +83,93 @@ section {
   background-color: #242424;
   color: #fff;
 }
+
+/* BUTTON STYLES */
+.btn {
+  background-color: #242424;
+  color: #fff;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border: 1px solid #242424;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: .3s linear all;
+  margin-bottom: 0.5rem;
+}
+
+.btn:hover, .btn.active-btn {
+  background-color: #fff;
+  color: #242424;
+}
+
+.btn-add {
+  background-color: green;
+  border-color: green;
+  color: #fff;
+}
+
+.btn-add:hover {
+  background-color: #fff;
+  color: green;
+}
+
+/* DASHBOARD SECTION */
+.dashboard-home {
+  display: flex;
+}
+
+.dashboard-home aside, .dashboard-home main {
+  padding: 1.5rem;
+}
+
+.dashboard-home h2 {
+  text-align: left;
+}
+
+.dashboard-home aside {
+  background-color: teal;
+  color: #fff;
+  width: 320px;
+}
+
+.dashboard-home main {
+  flex: 1;
+  background-color: #242424;
+  color: #fff;
+}
+
+.dashboard-home .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.dashboard-home .row h2 {
+  margin-bottom: 0;
+}
+
+/* table styles */
+table {
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+table > thead > tr > th {
+  text-align: left;
+  padding: 0.5rem 0.5rem;
+  background-color: #efefef;
+  color: var(--dark);
+  color: #242424;
+}
+
+table > tbody > tr > td {
+  padding: 0.5rem 0.5rem;
+  border-bottom: 1px solid #efefef;
+  white-space: nowrap;
+}
+
  
 /* styling text */
 .left {
@@ -451,6 +538,16 @@ nav ul li a:hover,
 .izdvojeno h3 {
   background-color: #fff;
   color: #242424;
+}
+
+.asortiman .card img {
+  opacity: 0.7;
+  transition: 0.3s linear all;
+}
+
+.asortiman .card img:hover {
+  opacity: 1;
+  transform: scale(1.03);
 }
 
 .asortiman h3 {

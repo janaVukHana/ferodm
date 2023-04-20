@@ -7,7 +7,7 @@ import ProizvodiIzdvojeno from "../components/ProizvodiIzdvojeno";
 export default function Home() {
     return (
         <>
-            <Hero title="Gvozdjara u tvom komsiluku">
+            <Hero title="Gvožđara u tvom komšiluku">
                 <p>
                     Dobrodošli u našu gvožđaru! Kod nas možete pronaći sve vrste metalnih materijala 
                     za Vaše projekte, uključujući čelične šipke, cevi, limove, žice, ograde, kapije i 
