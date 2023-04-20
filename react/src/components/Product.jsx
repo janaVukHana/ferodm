@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import axiosClient from "../axios-client";
+import ProductItem from "./ProductItem";
 
 export default function Product() {
 
@@ -43,12 +44,7 @@ export default function Product() {
                     <tbody>
                         {products.map(product => {
                             return (
-                                <tr key={product.id}>
-                                    <td>{product.id}</td>
-                                    <td>{product.title}</td>
-                                    <td>Image</td>
-                                    <td>Edit Delete</td>
-                                </tr>
+                                <ProductItem key={product.id} id={product.id} title={product.title} itemDelete={getProducts} />
                             )
                         })}
                     </tbody>
