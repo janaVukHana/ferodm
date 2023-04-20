@@ -5,7 +5,14 @@ export default function Asortiman() {
     return (
         <>
             <Hero title="Asortiman proizvoda">
-                <p>Zice, orgrade, lakovi, boje, alat ...</p>
+                <p>
+                    Naša gvožđara nudi širok asortiman metalnih materijala visokog kvaliteta - čelične 
+                    šipke, cevi, limove, žice, ograde, kapije i još mnogo toga. Naš stručni tim Vam je 
+                    na raspolaganju da Vam pomogne pronaći idealno rešenje za Vaš projekat.
+                </p>
+                <p style={{fontSize: '1.6rem'}}>
+                    Posetite nas danas i uverite se u našu ponudu.
+                </p>
             </Hero>
             <section className="asortiman light-section">
                 <div className="inner-container">

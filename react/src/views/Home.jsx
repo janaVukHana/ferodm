@@ -8,9 +8,19 @@ export default function Home() {
     return (
         <>
             <Hero title="Gvozdjara u tvom komsiluku">
-                <p>Dobrodošli u svet žica, mreža, pletiva, sita, 
-                kompletan asortiman gvožđarksog i farbarskog asortimana kao i 
-                mnoge opreme za domaćinstvo.</p>
+                <p>
+                    Dobrodošli u našu gvožđaru! Kod nas možete pronaći sve vrste metalnih materijala 
+                    za Vaše projekte, uključujući čelične šipke, cevi, limove, žice, ograde, kapije i 
+                    još mnogo toga. 
+                </p>
+                <p>
+                    Nudimo visokokvalitetne proizvode po povoljnim cenama. Naš tim 
+                    stručnjaka je tu da Vam pomogne pronaći najbolje rešenje za Vaše potrebe. 
+                </p>
+                <p>
+                    Posetite nas danas i uverite se u našu široku ponudu i kvalitet usluge.
+                </p>
+                
             </Hero>
             <Carousel />
             <ProizvodiIzdvojeno />

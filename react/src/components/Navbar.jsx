@@ -21,7 +21,16 @@ export default function Navbar() {
         <nav className="inner-container">
             <div className="logo-n-hamburger">
                 <div className='logo'>
-                    <NavLink to="/">Fero D&M<br /><span>Gvožđara</span></NavLink>
+                    <NavLink to="/">
+                        <div className="logo-content">
+                            <div className="logo-img-container">
+                                <img src="../images/logo/ferodm_logo.png" alt="logo" />
+                            </div>
+                            <div>
+                                Fero D&M<br /><span>Gvožđara</span>
+                            </div>
+                        </div>
+                    </NavLink>
                 </div>
                 <IconHamburger />
             </div>
