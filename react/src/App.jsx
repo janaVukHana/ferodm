@@ -17,6 +17,8 @@ import Plastika from './views/Plastika'
 import Elektro from './views/Elektro'
 import Contact from './views/Contact'
 import AboutUs from './views/AboutUs'
+import Login from './views/Login'
+import Dashboard from './views/Dashboard'
 import Footer from './components/Footer'
 
 function App() {
@@ -47,7 +49,12 @@ function App() {
 
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-            {/* <Route path="/contact-us/:id" element={<Protected><Message /></Protected>} /> */}
+
+            {/* LOGIN AND DASHBOARD */}
+            {/* <Route path="/dashboard" element={<Protected><Dashboard /></Protected>} /> */}
+            <Route path="/login" element={<Login />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+
           </Routes>
         </main>
 
