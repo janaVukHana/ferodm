@@ -60,7 +60,7 @@ export default function Login() {
                 <div className="contact-form">
                     <form onSubmit={handleSubmit}>
                         <input ref={emailRef} type="email" placeholder="Email adresa" />
-                        <div class="password-input-container">
+                        <div className="password-input-container">
                             <input ref={passwordRef} type={showPassword ? 'password' : 'text'} placeholder="Sifra" />
                             <button className="mb-1" onClick={handleClick}>Show</button>
                         </div>

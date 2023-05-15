@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProductController;
 
 /*
@@ -21,6 +22,7 @@ Route::middleware('auth:sanctum')->group(function() {
     });
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::apiResource('/products', ProductController::class,['except'=>['index']]);
+    Route::apiResource('/messages', MessageController::class, ['except'=>['store']]);
     // Route::get('/contact-us', [ContactController::class, 'index']);
     // Route::get('/contact-us/{contact}', [ContactController::class, 'show']);
     // Route::delete('/contact-us/{contact}', [ContactController::class, 'destroy']);
@@ -28,5 +30,5 @@ Route::middleware('auth:sanctum')->group(function() {
 
 // UNPROTECTED ROUTES
 Route::get('/products', [ProductController::class, 'index']);
-
+Route::post('/messages', [MessageController::class, 'store']);
 Route::post('/login', [AuthController::class, 'login']);

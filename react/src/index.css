@@ -180,6 +180,18 @@ table > tbody > tr > td {
   text-align: left;
 }
 
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
 .pb-0 {
   padding-bottom: 0;
 }
