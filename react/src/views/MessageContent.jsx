@@ -48,6 +48,7 @@ export default function MessageContent() {
     return (
         <Hero title="">
             {loading && <p>Loading...</p>}
+            <button className="btn btn-edit" onClick={() => navigate('/dashboard')}>Go Back</button>
             {message && 
                 <div style={{textAlign: 'left'}}>
                     <p><span className="bold italic underline">From:</span> {message.name}</p>

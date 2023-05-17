@@ -34,7 +34,14 @@ export default function ProizvodiIzdvojeno() {
                             return (
                                 <div key={product.id} className="card">
                                     <img src={`http://api.localhost:8000/images/${product.image}`} alt={product.title} />
-                                    <h3>{product.title}</h3>
+                                    <div className="desc">
+                                        <h3>{product.title}</h3>
+                                        <p>
+                                            Lorem ipsum opis proizvoda tralalal...
+                                            Lorem ipsum opis proizvoda tralalal...
+                                            Lorem ipsum opis proizvoda tralalal...
+                                        </p>
+                                    </div>
                                 </div>
                             )
                         })

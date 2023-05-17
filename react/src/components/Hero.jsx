@@ -1,4 +1,5 @@
 export default function Hero({title, children}) {
+
     return (
         <div className='header-hero'>
             <div className="intro-heading">

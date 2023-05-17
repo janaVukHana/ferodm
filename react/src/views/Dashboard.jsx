@@ -35,7 +35,7 @@ export default function Dashboard() {
         <>
             <Hero title="Dashboard page">
                 <p>
-                    U izradi...
+                    Na ovoj stranici možeš kreirati novi proizvod i/ili pregledati poruke.<br />Skrolaj dole.
                 </p>
             </Hero>
             <section className="light-section">
@@ -56,9 +56,7 @@ export default function Dashboard() {
                         </main>
                     </div>
                 </div>
-            </section>
-
-            
+            </section>  
         </>
     )
 }
