@@ -431,6 +431,19 @@ nav ul li a:hover,
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(10px);
+  /* test */
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn {
+  0% {
+      left: 0;
+      opacity: 0;
+  }
+  100% {
+      left: 50%;
+      opacity: 1;
+  }
 }
 
 /* SPECIAL SECTION */
@@ -581,6 +594,9 @@ nav ul li a:hover,
 
 .asortiman .card {
   height: 200px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 1s ease all;
 }
 
 .asortiman h3, .izdvojeno h3 {

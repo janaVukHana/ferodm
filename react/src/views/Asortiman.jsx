@@ -1,7 +1,32 @@
-import { Link } from "react-router-dom";
-import Hero from "../components/Hero";
+import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import Hero from '../components/Hero';
 
 export default function Asortiman() {
+  useEffect(() => {
+    const handleScroll = () => {
+    //   const cards = document.getElementsByClassName('card');
+      const asortimanContainer = document.querySelector('.asortiman .inner-container');
+      const cards = asortimanContainer.getElementsByClassName('card');
+
+      for (let i = 0; i < cards.length; i++) {
+        const rect = cards[i].getBoundingClientRect();
+        const isVisible = rect.top >= 0 && rect.bottom <= window.innerHeight;
+        const isNearBottom = rect.bottom - window.innerHeight <= 0;
+
+        if (isVisible && isNearBottom) {
+          cards[i].style.transform = 'translateY(0px)';
+          cards[i].style.opacity = '1';
+        } 
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
     return (
         <>
             <Hero title="Asortiman proizvoda">

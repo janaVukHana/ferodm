@@ -37,7 +37,6 @@ class ProductController extends Controller
 
         return response(new ProductResource($product), 201);
         // 201 == the request has succeeded and has led to the creation of a resource.
-
     }
 
     /**
