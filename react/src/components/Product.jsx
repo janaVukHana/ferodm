@@ -28,9 +28,7 @@ export default function Product() {
         <>
             <div className="row">
                 <h2>My Products</h2>
-                {/* <Link to="/projects/new" className="btn-add">Add New</Link> */}
                 <Link to="/products/new" className="btn btn-add">Add New</Link>
-                {/* <span className="btn btn-add">Add New</span> */}
             </div>
             {loading && <p>Loading ...</p>}
             {!loading &&

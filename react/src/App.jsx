@@ -69,6 +69,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Protected><Dashboard /></Protected>} />
 
+            <Route path="/products/:id" element={<Protected><ProductForm /></Protected>} />
             <Route path="/products/new" element={<Protected><ProductForm /></Protected>} />
             <Route path="/messages/:id" element={<Protected><MessageContent /></Protected>} />
 

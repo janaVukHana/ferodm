@@ -24,7 +24,7 @@ class ProductController extends Controller
         // MOZE I StoreProductRequest $request CLASS DA SE NAPRAVI kao CodeHolic
         $formData = $request->validate([
             'title' => ['required', 'max:10'],
-            'image' => ['required']
+            'image' => ['required','image']
         ]);
 
         $image = request()->file('image');
@@ -44,25 +44,60 @@ class ProductController extends Controller
      * Display the specified resource.
      */
     public function show(string $id)
-    {
-        //
+{
+    $product = Product::find($id);
+
+    if (!$product) {
+        return response()->json(['product' => 'Product not found'], 404);
     }
 
+    return new ProductResource($product);
+}
+
     /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
-    {
-        //
+ * Update the specified resource in storage.
+ */
+public function update(Request $request, string $id)
+{
+    $product = Product::find($id);
+
+    if (!$product) {
+        return response()->json(['product' => 'Product not found'], 404);
     }
+
+    $formData = $request->validate([
+        'title' => ['required', 'max:10'],
+        'image' => ['nullable','image']
+    ]);
+
+    if ($request->hasFile('image')) {
+        $image = $request->file('image');
+        $image_name = time() . '.' . $image->getClientOriginalExtension();
+        $image->move('images/', $image_name);
+        $formData['image'] = $image_name;
+
+        // Delete the old image only if it exists
+        if ($product->image) {
+            unlink('images/' . $product->image);
+        }
+    }
+
+    $product->update($formData);
+
+    return new ProductResource($product);
+}
+
+
 
     /**
      * Remove the specified resource from storage.
      */
     public function destroy(Product $product)
     {
-        unlink('images/' . $product['image']);
-        
+        // Delete the old image only if it exists
+        if ($product->image) {
+            unlink('images/' . $product->image);
+        }        
         $product->delete();
         return response('', 204);
     }

@@ -17,7 +17,6 @@ export default function Message() {
             .then(({data}) => {
                 setLoading(false)
                 setMessages(data.data)
-                console.log(data.data);
             })
             .catch(() => setLoading(false))
     }
