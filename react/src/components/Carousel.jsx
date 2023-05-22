@@ -22,7 +22,7 @@ export default function Carousel() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImage((currentImage + 1) % images.length);
-    }, 3000); // Set the interval time in milliseconds (e.g., 3000 = 3 seconds)
+    }, 4000);
 
     return () => {
       clearInterval(interval);

@@ -48,7 +48,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/asortiman" element={<Asortiman />} />
-            {/* Asortiman static show pages */}
+            {/* Asortiman Static Show Pages */}
             <Route path="/asortiman/zice" element={<Zice />} />
             <Route path="/asortiman/stubovi" element={<Stubovi />} />
             <Route path="/asortiman/ekseri" element={<Ekseri />} />
@@ -65,7 +65,7 @@ function App() {
             <Route path="/about-us" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
 
-            {/* LOGIN AND DASHBOARD */}
+            {/* Login and Dashboard */}
             <Route path="/login" element={<Login />} />
             <Route path="/dashboard" element={<Protected><Dashboard /></Protected>} />
 

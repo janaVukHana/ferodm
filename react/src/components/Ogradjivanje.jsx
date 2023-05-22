@@ -10,7 +10,6 @@ export default function Ogradjivanje() {
                         <p>Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....Neki text o ogradjivanju, ogradama ....</p>
                     </div>
                     <div className="carousel-image">
-                        {/* <img src="./images/hero/hero_graphite.jpg" alt="" /> */}
                         <Carousel />
                     </div>
                 </div>
