@@ -1,11 +1,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Lora:wght@400;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+/* Color Scheme */
+
 :root {
   --green: #82CD47;
   --red: #DF2E38;
   --blue: #1A374D;
   --light-blue: #B1D0E0;
+}
+
+/* General Styles */
+html, body {
+  height: 100%,
 }
 
 * {
@@ -20,6 +27,8 @@ body {
   color: white;
   overflow-x: hidden;
 }
+
+/* Typography */
 
 h1 {
   color: #fff;
@@ -53,6 +62,24 @@ a {
   color: inherit;
 }
 
+.left {
+  text-align: left;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* Image Styles */
+
 img {
   max-width: 100%;
   max-height: 100%;
@@ -63,11 +90,14 @@ img {
   width: 100px;
 }
 
-button {
-  border: 0;
-  offset: 0;
-  cursor: pointer;
+.circle {
+  background-color: #fff;
+  color: var(--blue);
+  padding: 1rem;
+  border-radius: 50%;
 }
+
+/* Layout Styles */
 
 section {
   padding: 3rem 2rem;
@@ -76,13 +106,6 @@ section {
 .inner-container {
   max-width: 1200px;
   margin: 0 auto;
-}
-
-.circle {
-  background-color: #fff;
-  color: var(--blue);
-  padding: 1rem;
-  border-radius: 50%;
 }
 
 .light-section {
@@ -95,7 +118,32 @@ section {
   color: #fff;
 }
 
-/* BUTTON STYLES */
+/* Spacing Styles */
+
+.pb-0 {
+  padding-bottom: 0;
+}
+
+.pb-1 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-2 {
+  padding-bottom: 1rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.5rem;
+}
+
+/* Button Styles */
+
+button {
+  border: 0;
+  offset: 0;
+  cursor: pointer;
+}
+
 .btn {
   display: inline-block;
   background-color: #242424;
@@ -138,7 +186,8 @@ section {
   color: #fff;
 }
 
-/* DASHBOARD SECTION */
+/* Dashboard Styles */
+
 .dashboard-home {
   display: flex;
 }
@@ -174,7 +223,8 @@ section {
   margin-bottom: 0;
 }
 
-/* table styles */
+/* Table Styles */
+
 table {
   width: 100%;
   border-spacing: 0;
@@ -195,39 +245,7 @@ table > tbody > tr > td {
   white-space: nowrap;
 }
 
- 
-/* styling text */
-.left {
-  text-align: left;
-}
-
-.bold {
-  font-weight: 700;
-}
-
-.italic {
-  font-style: italic;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.pb-0 {
-  padding-bottom: 0;
-}
-
-.pb-1 {
-  padding-bottom: 0.5rem;
-}
-
-.pb-2 {
-  padding-bottom: 1rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.5rem;
-}
+/* Message Styles */
 
 .notification {
   position: fixed;
@@ -248,16 +266,8 @@ table > tbody > tr > td {
   margin-top: 1rem;
 }
 
-.password-input-container {
-  display: flex;
-  gap: 10px;
-}
+/* Navigation Styles */
 
-.password-input-container button {
-  flex: 1;
-}
-
-/* NAVIGATION SECTION */
 nav {
   position: absolute;
   left: 50%;
@@ -319,7 +329,7 @@ nav .hamburger-icon button .line-bottom {
   bottom: 6px;
 }
 
-/* animate hamburger icon on click */
+/* Animate Hamburger Icon On Click */
 .animate-hamburger .line:nth-child(2) {
   width: 32px;
 }
@@ -365,6 +375,8 @@ nav ul li a:hover,
   border-bottom-color: #fff;
 }
 
+/* Logo Styles */
+
 .logo {
   font-size: 20px;
   letter-spacing: 10px;
@@ -400,7 +412,8 @@ nav ul li a:hover,
   color: #979797;
 }
 
-/* HERO SECTION */
+/* Hero Styles */
+
 .header-hero {
   position: relative;
   min-height: 100vh;
@@ -446,7 +459,8 @@ nav ul li a:hover,
   }
 }
 
-/* SPECIAL SECTION */
+/* Carousel Styles */
+
 .carousel-content {
   display: flex;
 }
@@ -465,7 +479,47 @@ nav ul li a:hover,
   flex-basis: 50%;
 }
 
-/* PARTNERS LOGOS SECTION */
+.carousel {
+  width: 100%;
+  height: 300px; /* Set the desired height for the carousel */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.carousel-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.carousel .next, .carousel .prev {
+  color: white;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  opacity: 0.7;
+  padding: 0.3rem;
+  transition: all .3s linear;
+}
+
+.carousel .prev:hover, .carousel .next:hover {
+  opacity: 1;
+}
+
+.carousel .prev {
+  left: 0;
+}
+
+.carousel .next {
+  right: 0;
+}
+
+/* Partners Logo Styles */
+
 .partners-logos {
   display: flex;
   justify-content: center;
@@ -486,7 +540,8 @@ nav ul li a:hover,
   vertical-align: middle;
 }
 
-/* CONTACT SECTION */
+/* Contact Styles */
+
 .contact-info {
   display: flex;
   padding: 0 2.5rem;
@@ -538,7 +593,8 @@ nav ul li a:hover,
   background-color: var(--light-blue);
 }
 
-/* KONTAKT FORMA */
+/* Kontakt Form Styles */
+
 .contact-form {
   width: 50%;
   margin: 0 auto;
@@ -550,6 +606,15 @@ nav ul li a:hover,
   padding: 1rem 0.5rem;
   width: 100%;
   margin-bottom: 0.5rem;
+}
+
+.password-input-container {
+  display: flex;
+  gap: 10px;
+}
+
+.password-input-container button {
+  flex: 1;
 }
 
 .contact-form button {
@@ -567,8 +632,7 @@ nav ul li a:hover,
   color: var(--blue);
 }
 
-/* ASORTIMAN SECTION */
-/* PRODUCTS IZDVOJENO SECTION */
+/* Asortiman And Izdvojeno Styles */
 
 .cards-container {
   display: flex;
@@ -654,7 +718,8 @@ nav ul li a:hover,
     height: 90%;
 }
 
-/* SHOW SINGLE ASORTIMAN PAGE */
+/* Show Single Asortiman Page */
+
 .asortiman-intro {
   display: flex;
 }
@@ -672,13 +737,16 @@ nav ul li a:hover,
   width: 100%;
 }
 
-/* FOOTER SECTION */
+/* Footer Styles */
+
 footer p {
   font-size: 1rem;
   line-height: 1;
 }
 
-/* @MEDIA QUERY */
+/* @media Styles */
+
+/* medium screens */
 @media only screen and (max-width: 992px) {
   h2 {
     font-size: 2rem;
@@ -697,7 +765,7 @@ footer p {
   }
 }
 
-
+/* small screens */
 @media only screen and (max-width: 768px) {
   .header-hero .intro-heading {
     width: 90%;
@@ -713,6 +781,7 @@ footer p {
   
 }
 
+/* extra small screens */
 @media only screen and (max-width: 600px) {
 
   h2 {

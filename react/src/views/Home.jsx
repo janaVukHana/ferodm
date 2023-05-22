@@ -1,6 +1,5 @@
-import Akcija from "../components/Akcija";
-import Carousel from "../components/Carousel";
 import Hero from "../components/Hero";
+import Ogradjivanje from "../components/Ogradjivanje";
 import Partner from "../components/Partner";
 import ProizvodiIzdvojeno from "../components/ProizvodiIzdvojeno";
 
@@ -23,7 +22,7 @@ export default function Home() {
                 </p>
                 
             </Hero>
-            <Carousel />
+            <Ogradjivanje />
             <ProizvodiIzdvojeno />
             <Partner />
         </>
