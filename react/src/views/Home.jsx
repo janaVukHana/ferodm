@@ -20,7 +20,6 @@ export default function Home() {
                 <p>
                     Posetite nas danas i uverite se u našu široku ponudu i kvalitet usluge.
                 </p>
-                
             </Hero>
             <Ogradjivanje />
             <ProizvodiIzdvojeno />

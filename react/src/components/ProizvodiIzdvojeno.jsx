@@ -46,30 +46,6 @@ export default function ProizvodiIzdvojeno() {
                             )
                         })
                     }
-                    {/* <div className="card">
-                        <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <h3>Elektična kosilica</h3>
-                    </div> */}
-                    {/* <div className="card">
-                        <img src="./images/products/sac-gusani.webp" alt="elektricna kosilica" />
-                        <h3>Sač gusani</h3>
-                    </div>
-                    <div className="card">
-                        <img src="./images/products/trimer.webp" alt="elektricna kosilica" />
-                        <h3>Trimer kosilica</h3>
-                    </div>
-                    <div className="card">
-                        <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <h3>Elektična kosilica</h3>
-                    </div>
-                    <div className="card">
-                        <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <h3>Elektična kosilica</h3>
-                    </div>
-                    <div className="card">
-                        <img src="./images/products/kosilica.webp" alt="elektricna kosilica" />
-                        <h3>Elekticna kosilica</h3>
-                    </div> */}
                 </div>
                 
             </div>
