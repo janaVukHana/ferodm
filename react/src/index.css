@@ -118,6 +118,12 @@ section {
   color: #fff;
 }
 
+.gradient-light {
+  background: #fff;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fff, #3a3a3a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fff, #3a3a3a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 /* Spacing Styles */
 
 .pb-0 {
@@ -463,20 +469,23 @@ nav ul li a:hover,
 
 .carousel-content {
   display: flex;
+  gap: 16px;
 }
 
 .carousel-description {
   color: #242424;
-  padding: 1rem;
   flex: 1;
 }
 
 .carousel-description p {
-  text-align: center;
+  text-align: justify;
 }
 
 .carousel-image {
   flex-basis: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .carousel {
@@ -486,13 +495,14 @@ nav ul li a:hover,
   align-items: center;
   justify-content: space-between;
   position: relative;
+  background-color: #242424;
+  border-radius: 6px;
 }
 
-.carousel-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
+.carousel img {
+  margin: 0 auto;
 }
+
 
 .carousel .next, .carousel .prev {
   color: white;
@@ -522,14 +532,17 @@ nav ul li a:hover,
 
 .partners-logos {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   flex-wrap: wrap;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 .partners-logos div {
   margin-top: auto;
   margin-bottom: auto;
-  margin-right: 16px;
+  margin-right: 1rem;
   width: 100px;
   max-width: 100px; 
 }
@@ -538,6 +551,26 @@ nav ul li a:hover,
   width: 100%;
   margin: auto;
   vertical-align: middle;
+}
+
+/* O nama Styles */
+.about .images {
+  display: flex;
+}
+
+.about .image {
+  position: relative;
+  padding: 1rem;
+}
+
+.about .image span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242424;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-bottom-right-radius: 6px;
 }
 
 /* Contact Styles */
@@ -591,6 +624,7 @@ nav ul li a:hover,
 
 .working-time p:nth-of-type(2) {
   background-color: var(--light-blue);
+  color: var(--blue);
 }
 
 /* Kontakt Form Styles */
@@ -832,6 +866,10 @@ footer p {
       margin-right: 8px;
       width: 70px;
       max-width: 70px; 
+    }
+
+    .about .images {
+      flex-direction: column;
     }
 
     .contact-info {

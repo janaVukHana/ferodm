@@ -13,13 +13,27 @@ export default function AboutUs() {
             </Hero>
             <section className="light-section">
                 <div className="inner-container">
-                    <p>Prodajni objekat je površine 35m2, a raspolažemo sa istom tolikom površinom magacinskog prostora.</p>
+                    <div className="about">
+                        <div className="desc">
+                            <p>Prodajni objekat je površine 35m2, a raspolažemo sa istom tolikom površinom magacinskog prostora.</p>
+                            <p>
+                                "U ovom trenutku raspolažemo sa preko 3000 artikala, a u ponudi možemo posebno
+                                istaći žičane proizvode, koje odmeravamo po želji ili se
+                                poručuju i izrađuj u po specijalnim zahtevima cenjenih potrošača."
+                            </p>
+                        </div>
 
-                    <p>
-                        "U ovom trenutku raspolažemo sa preko 3000 artikala, a u ponudi možemo posebno
-                        istaći žičane proizvode, koje odmeravamo po želji ili se
-                        poručuju i izrađuj u po specijalnim zahtevima cenjenih potrošača."
-                    </p>
+                        <div class="images">
+                            <div className="image">
+                                <img src="./images/shop/fero_shop.jpg" alt="slika prodavnice" />
+                                <span>Novi Sad</span>
+                            </div>
+                            <div className="image">
+                                <img src="./images/shop/fero_shop.jpg" alt="slika prodavnice" />
+                                <span>Kikinda</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </>
