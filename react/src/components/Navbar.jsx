@@ -26,7 +26,13 @@ export default function Navbar() {
                 setShowMenu(false)
             }
         })
-    }, [])
+
+        if(showMenu) {
+            document.body.style.overflow = 'hidden'
+        } else {
+            document.body.style.overflow = 'visible'
+        }
+    }, [showMenu])
 
     return (
         <nav className="inner-container">
