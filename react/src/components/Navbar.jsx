@@ -49,7 +49,7 @@ export default function Navbar() {
                 <ul>
                     <li><NavLink onClick={() => setShowMenu(false)} className={({isActive}) => isActive ? 'active':''} to="/">Početna</NavLink></li>
                     <li><NavLink onClick={() => setShowMenu(false)} className={({isActive}) => isActive ? 'active':''} to="/asortiman">Asortiman</NavLink></li>
-                    <li><NavLink onClick={() => setShowMenu(false)} className={({isActive}) => isActive ? 'active':''} to="/about-us">O nama</NavLink></li>
+                    <li><NavLink onClick={() => setShowMenu(false)} className={({isActive}) => isActive ? 'active':''} to="/about-us">O&nbsp;nama</NavLink></li>
                     <li><NavLink onClick={() => setShowMenu(false)} className={({isActive}) => isActive ? 'active':''} to="/contact">Kontakt</NavLink></li>
                     {token && 
                         <li><NavLink className={({isActive}) => isActive ? 'active':''} to="/dashboard">Dashboard</NavLink></li>

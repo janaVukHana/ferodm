@@ -317,7 +317,7 @@ nav .hamburger-icon button .line {
   left: 50%;
   width: 35px;
   height: 2px;
-  background-color: white;
+  background-color: #fff;
   transform: translateX(-50%);
   transition: .3s linear width;
 }
@@ -337,10 +337,10 @@ nav .hamburger-icon button .line-bottom {
 
 /* Animate Hamburger Icon On Click */
 .animate-hamburger .line:nth-child(2) {
-  width: 32px;
+  width: 25px;
 }
 .animate-hamburger .line:last-child {
-  width: 29px;
+  width: 15px;
 }
 
 nav ul {
@@ -351,10 +351,6 @@ nav ul {
 
 nav .nav-links {
   transition: all 0.5s ease-out;
-}
-
-nav div.show-menu {
-  left: 0;
 }
 
 nav ul li {
@@ -829,61 +825,66 @@ footer p {
   nav .nav-links {
       position: fixed;
       top: 70px;
-      left: 100%;
-      width: 100%;
+      right: 0;
+      width: 0;
       height: 90vh;
       background-color: black;
       z-index: 100;
+      overflow: hidden;
     }
 
-    nav ul {
-      flex-direction: column;
-      padding: 0;
-      border-bottom: 0px solid #fff;
-    }
+  nav div.show-menu {
+    width: 100%;
+  }
 
-    nav ul li a {
-      display: inline-block;
-    }
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+    border-bottom: 0px solid #fff;
+  }
 
-    .header-hero .intro-heading {
-      width: 95%;
-    }
+  nav ul li a {
+    display: inline-block;
+  }
 
-    h1 {
-      font-size: 2rem;
-    }
+  .header-hero .intro-heading {
+    width: 95%;
+  }
 
-    .carousel-content {
-      flex-direction: column;
-    }
+  h1 {
+    font-size: 2rem;
+  }
 
-    .products-container div {
-      flex: 0 0 48%;
-    }
+  .carousel-content {
+    flex-direction: column;
+  }
 
-    .partners-logos div {
-      margin-right: 8px;
-      width: 70px;
-      max-width: 70px; 
-    }
+  .products-container div {
+    flex: 0 0 48%;
+  }
 
-    .about .images {
-      flex-direction: column;
-    }
+  .partners-logos div {
+    margin-right: 8px;
+    width: 70px;
+    max-width: 70px; 
+  }
 
-    .contact-info {
-      flex-direction: column;
-    }
+  .about .images {
+    flex-direction: column;
+  }
 
-    .working-time p {
-      width: 95%;
-    }
-    
-    .contact-form {
-      width: 95%;
-    }
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .working-time p {
+    width: 95%;
+  }
   
+  .contact-form {
+    width: 95%;
+  }
+
   .card {
     flex-basis: calc(100% - 20px);
   }

@@ -23,7 +23,7 @@ export default function AboutUs() {
                             </p>
                         </div>
 
-                        <div class="images">
+                        <div className="images">
                             <div className="image">
                                 <img src="./images/shop/fero_shop.jpg" alt="slika prodavnice" />
                                 <span>Novi Sad</span>
