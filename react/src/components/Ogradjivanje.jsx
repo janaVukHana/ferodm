@@ -8,8 +8,8 @@ export default function Ogradjivanje() {
                 <div className="carousel-content">
                     <div className="carousel-description">
                         <p>
-                        U našem asortimanu proizvoda nudimo kompletan program materijala za 
-                        ograđivanje (stubove, žice, pletiva, španere...).
+                        U našem asortimanu proizvoda nudimo <span>kompletan program materijala za 
+                        ograđivanje</span> (stubove, žice, pletiva, španere...).
                         </p>
                         <p>
                         Kao posebnu uslugu za naše kupce nudimo mogućnost kompletnog ograđivanja prostora 
