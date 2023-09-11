@@ -14,7 +14,7 @@ export default function KontaktInfo() {
                             <FontAwesomeIcon icon={faHouse} size="lg" />
                         </div>
                     </div>
-                    <div>
+                    <div className='icon-info'>
                         <p className='info-title'>Adresa</p>
                         <p className='info-details'>
                             <a 
@@ -32,7 +32,7 @@ export default function KontaktInfo() {
                             <FontAwesomeIcon icon={faMobile} size="lg" />  
                         </div>
                     </div>
-                    <div>
+                    <div className='icon-info'>
                         <p className='info-title'>Telefon</p>
                         <p className='info-details'>
                             <a href="tel:0216311183">0216311183</a>, 
@@ -46,7 +46,7 @@ export default function KontaktInfo() {
                             <FontAwesomeIcon icon={faEnvelope} size="lg" />
                         </div>
                     </div>
-                    <div>
+                    <div className='icon-info'>
                         <p className='info-title'>Email</p>
                         <p className='info-details'>
                             <a href="mailto:dm.fero@yahoo.com">dm.fero@yahoo.com</a>
@@ -63,7 +63,7 @@ export default function KontaktInfo() {
                             <FontAwesomeIcon icon={faHouse} size="lg" />
                         </div>
                     </div>
-                    <div>
+                    <div className='icon-info'>
                         <p className='info-title'>Adresa</p>
                         <p className='info-details'>
                             <a 
@@ -81,7 +81,7 @@ export default function KontaktInfo() {
                             <FontAwesomeIcon icon={faMobile} size="lg" />  
                         </div>
                     </div>
-                    <div>
+                    <div className='icon-info'>
                         <p className='info-title'>Telefon</p>
                         <p className='info-details'>
                             <a href="tel:0606133307">0606133307</a>
@@ -94,7 +94,7 @@ export default function KontaktInfo() {
                             <FontAwesomeIcon icon={faEnvelope} size="lg" />
                         </div>
                     </div>
-                    <div>
+                    <div className='icon-info'>
                         <p className='info-title'>Email</p>
                         <p className='info-details'>
                             <a href="mailto:dm.feroki@yahoo.com">dm.feroki@yahoo.com</a>

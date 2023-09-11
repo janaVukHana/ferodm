@@ -583,6 +583,11 @@ nav ul li a:hover,
 
 .contact-info .city-info {
   flex: 1;
+  padding: 1rem;
+}
+
+.contact-info .city-info:nth-child(1) {
+  border-right: 1px solid #fff;
 }
 
 .contact-info .info {
@@ -595,8 +600,17 @@ nav ul li a:hover,
   margin-right: 1rem;
 }
 
+.contact-info .icon-info {
+  padding-top: 10px;
+}
+
 .contact-info .info-title {
   font-weight: 700;
+  padding-bottom: 0;
+}
+
+.contact-info .info-details {
+  padding-bottom: 0;
 }
 
 .contact-info h2, .contact-info p {
@@ -879,6 +893,11 @@ footer p {
 
   .contact-info {
     flex-direction: column;
+  }
+
+  .contact-info .city-info:nth-child(1) {
+    border-right: none;
+    border-bottom: 1px solid #fff;
   }
 
   .working-time p {
